@@ -1,0 +1,10 @@
+<!--
+<div class="d-flex justify-content-end">
+  <img [src]="coracaoVazio"/>
+  <img [src]="coracaoCheio"/>
+  <img [src]="coracaoCheio"/>
+</div>
+-->
+<div class="d-flex justify-content-end">
+  <img *ngFor="let coracao of coracoes" [src]="coracao.existeCoracao()"/>
+</div>
